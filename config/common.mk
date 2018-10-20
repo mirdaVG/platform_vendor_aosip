@@ -92,6 +92,9 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
     vendor/aosip/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.potato.overlay.lawnconf
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
